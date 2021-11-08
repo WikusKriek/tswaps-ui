@@ -1,0 +1,71 @@
+// Theme
+body.body--light {
+  background: $grey-0;
+  .inputCard,
+  .dialogCard {
+    background: $white;
+    color: $dark-0;
+  }
+  .selectorContainer {
+    border-color: rgba($dark, 0.8);
+    color: $dark-1;
+    &:hover {
+      background: rgba($dark, 0.2);
+    }
+  }
+  .text-h6 {
+    color: $dark-0;
+  }
+}
+
+body.body--dark {
+  background: $dark-1;
+  color: $white;
+  .inputCard {
+    background: $purpleSoft;
+    color: $white;
+  }
+  .dialogCard {
+    background: $dark-1;
+    color: $white;
+  }
+  .selectorContainer {
+    border-color: rgba($white, 0.2);
+    background: $dark;
+    color: $white;
+    &:hover {
+      background: rgba($dark, 0.5);
+    }
+  }
+  .text-h6 {
+    color: $white;
+  }
+}
+
+// Cards & Dialogs
+.inputCard {
+  padding: 30px;
+  border-radius: 20px;
+  @media only screen and (max-width: 800px) {
+    padding: 15px;
+  }
+}
+
+.q-dialog__inner > div {
+  border-radius: 20px;
+}
+
+// Coin & network selectors
+.selectorContainer {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px;
+  padding: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
